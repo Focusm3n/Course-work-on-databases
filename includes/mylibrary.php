@@ -5,7 +5,7 @@ require_once 'connect.php';
  * @var connect $connect
  */
 if (!$_SESSION['user']) {
-    header("Location: index.php");
+    header("Location: index-Course.php");
 }
 //$search_result = $_POST['query'];
 //if (!empty($_POST['query'])) {
@@ -50,7 +50,7 @@ $books = mysqli_fetch_all($books_data);
     <div class="basic">
         <form action="generatePDF.php" method="post">
 
-            <button class="btn btn-success" type="submit">Генерировать PDF из MySQL</button>
+            <button class="btn btn-success" name="generate_pdf" type="submit">Генерировать PDF из MySQL</button>
         </form>
         <form action="generateJSON.php" method="post">
             <input type="hidden" name="JSON" value="<?php echo $json?>">

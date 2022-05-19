@@ -5,7 +5,7 @@ require_once 'connect.php';
  * @var connect $connect
  */
 if (!$_SESSION['user']) {
-    header("Location: index.php");
+    header("Location: index-Course.php");
 }
 $id_book = $_GET['id'];
 $query = 'SELECT * FROM book WHERE id = '.$id_book;

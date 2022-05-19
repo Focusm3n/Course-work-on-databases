@@ -5,7 +5,7 @@ require_once 'includes/connect.php';
  * @var connect $connect
  */
 if (!$_SESSION['user']) {
-    header("Location: index.php");
+    header("Location: index-Course.php");
 }
 $search_result = $_POST['query'];
 if (!empty($_POST['query'])) {

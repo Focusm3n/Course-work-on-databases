@@ -22,7 +22,7 @@ if (strlen($name) < 3 || strlen($name) > 40) {
     $login_check = mysqli_query($connect, "SELECT password FROM `users` WHERE `login` = '$login'");
     if (mysqli_num_rows($login_check) != 0) {
         $_SESSION['message_error'] = 'Такой пользователь уже существует. Авторизируйтесь';
-        header('Location: ../index.php');
+        header('Location: ../index-Course.php');
         die("");
     }
 }
@@ -43,7 +43,7 @@ if ($password === $password_confirm) {
     mysqli_query($connect, "INSERT INTO `users` (`id`, `name`, `login`, `password`, `avatar`) VALUES (NULL, '$name', '$login', '$password', '$path')");
 
     $_SESSION['message_good'] = 'Регистрация прошла успешно';
-    header('Location: ../index.php');
+    header('Location: ../index-Course.php');
     die("");
 
 } else {

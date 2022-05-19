@@ -1,7 +1,7 @@
 <?php
 session_start();
 if (!$_SESSION['user']) {
-    header("Location: index.php");
+    header("Location: index-Course.php");
 }
 $id_user = $_POST['id_user'];
 

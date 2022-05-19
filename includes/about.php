@@ -1,7 +1,7 @@
 <?php
 session_start();
 if (!$_SESSION['user']) {
-    header("Location: index.php");
+    header("Location: index-Course.php");
 }
 $user = $_SESSION['user'];
 ?>

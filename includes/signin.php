@@ -33,6 +33,6 @@ if (mysqli_num_rows($user_data) != 0) {
     }
 } else {
     $_SESSION['message_error'] = 'Неверный логин или пароль';
-    header('Location: ../index.php');
+    header('Location: ../index-Course.php');
 }
 

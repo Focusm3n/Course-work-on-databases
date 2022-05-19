@@ -5,7 +5,7 @@ require_once 'connect.php';
  * @var connect $connect
  */
 if (!$_SESSION['user']) {
-    header("Location: index.php");
+    header("Location: index-Course.php");
 }
 $user = $_SESSION['user'];
 $query = "SELECT b.id, b.name_book, b.year_of_creation FROM request r JOIN book b ON b.id = r.book_fk JOIN users u on u.id = r.client_fk WHERE u.id = ".$user['id'];

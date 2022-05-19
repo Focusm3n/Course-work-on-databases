@@ -29,7 +29,7 @@ if ($_SESSION['user']) {
     <input type="password" name="password_confirm" placeholder="Подтверждение пароля">
     <button type="submit">Зарегистрироваться</button>
     <p>
-        У вас есть аккаунт? - <a href="../index.php">Войти</a>
+        У вас есть аккаунт? - <a href="../index-Course.php">Войти</a>
     </p>
     <?php
     if ($_SESSION['message_error']) {
